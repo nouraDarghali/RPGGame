@@ -60,7 +60,7 @@ if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && isReloading == 
     Reload();
 }
 if(readyShoot && isShooting == false && isReloading == false && bulletsLeft <= 0){
-//Reload();
+Reload();
 }
         if (readyShoot && isShooting && bulletsLeft > 0)
         {

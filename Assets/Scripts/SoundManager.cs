@@ -5,11 +5,14 @@ using static Weapon;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance {get; set;}
-    public AudioSource shootingSound1911;
-    public AudioSource reloadingSound1911;
-    public AudioSource shootingSoundM16;
+    public AudioSource ShootingChannel;
+    
+   
     public AudioSource reloadingSoundM16;
+    public AudioSource reloadingSound1911;
     public AudioSource emptyManagizeSound1911;
+    public AudioClip M16Shot;
+    public AudioClip P1911Shot;
     private void Awake(){
         if(Instance != null && Instance != this){
             Destroy(gameObject);
@@ -22,10 +25,10 @@ public class SoundManager : MonoBehaviour
     public void PlayShootingSound(WeaponModel weapon){
         switch(weapon){
             case WeaponModel.Pistol1911:
-            shootingSound1911.Play();
+            ShootingChannel.PlayOneShot(P1911Shot);
             break;
             case WeaponModel.M16:
-            shootingSoundM16.Play();
+            ShootingChannel.PlayOneShot(M16Shot);
             break;
         }
     }
