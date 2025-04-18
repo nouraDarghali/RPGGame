@@ -5,12 +5,24 @@ using UnityEngine;
 public class GlobalReferences : MonoBehaviour
 {
     public static GlobalReferences Instance {get; set;}
+
     public GameObject bulletImpactEffectPrefab;
-    private void Awake(){
-        if(Instance != null && Instance != this){
+
+    public GameObject grenadeExplosionEffect;
+    
+    public GameObject smokeGrenadeEffect;
+
+    public GameObject bloodSprayEffect;
+
+    public int waveNumber; 
+    private void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
             Destroy(gameObject);
         }
-        else {
+        else
+        {
             Instance = this;
         }
     }

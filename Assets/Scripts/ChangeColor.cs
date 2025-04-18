@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChangeColor : MonoBehaviour
 {
-    public Color newColor = Color.gray; // Mets la couleur que tu veux
+    public Color newColor = Color.white; // Mets la couleur que tu veux
 
     void Start()
     {
