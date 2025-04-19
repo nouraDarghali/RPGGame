@@ -23,8 +23,16 @@ public class ZombieSpawnController : MonoBehaviour
 
     public TextMeshProUGUI currentWaveUI;
 
+    public int playerScore = 0;
+public TextMeshProUGUI playerScoreUI;
+public int pointsPerWave = 10; // Tu peux ajuster ce montant
+
+
     private void Start()
     {
+        playerScore = 0;
+playerScoreUI.text =  playerScore.ToString();
+
         currentZombiesPerWave = initialZombiesPerWave;
         StartNextWave();
 
@@ -106,6 +114,8 @@ public class ZombieSpawnController : MonoBehaviour
         waveOverUI.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(waveCooldown);
+playerScore += pointsPerWave;
+playerScoreUI.text = playerScore.ToString();
 
         inCooldown = false;
         waveOverUI.gameObject.SetActive(false);
