@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: d4307c88d2a55ba489be1ebefc73f2d0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: ad51894a651725c42acc54ccd6a81282, type: 3}
+  RunWeaverOnConfigChanges: 1
