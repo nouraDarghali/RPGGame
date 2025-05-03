@@ -8,4 +8,4 @@ niveau 1 :
 niveau 2 :  
 🔗 [Cliquez pour regarder la vidéo](https://drive.google.com/file/d/1sPhcgoPa0FNlfMQgrbvEy1GExem_BOj_/view)
 
-file:///C:/Users/norad/Downloads/GDD%20(IBNITTOU_Leila%20&%20DARGHALI_Noura).pdf
+
